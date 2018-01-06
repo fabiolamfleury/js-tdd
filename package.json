@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd",
+  "version": "1.0.0",
+  "description": "Biblioteca para seguir o curso de js com TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiolamfleury/js-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "class"
+  ],
+  "author": "Fabíola Fleury <fabiola.mfleury@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiolamfleury/js-tdd/issues"
+  },
+  "homepage": "https://github.com/fabiolamfleury/js-tdd#readme"
+}
