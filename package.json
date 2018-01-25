@@ -6,7 +6,13 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --colors -- progress",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "server": "webpack-dev-server --inline --open",
+    "webpack": "webpack",
+    "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
@@ -24,9 +30,15 @@
   },
   "homepage": "https://github.com/fabiolamfleury/js-tdd#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015-native-modules": "^6.9.4",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
